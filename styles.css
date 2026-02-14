@@ -1,8 +1,8 @@
-/* Empieza Variables (Paleta Tech Noir) */
+/* Empieza Variables (Paleta Code Unit) */
 :root {
-    --bg-dark: #121418; 
-    --bg-darker: #0a0b0d;
-    --accent: #00e1ff; 
+    --bg-dark: #121418;  /* Mantenemos tu fondo original */
+    --bg-darker: #0a0b0d; /* Mantenemos tu fondo original */
+    --accent: #4ade80;    /* CAMBIO: Verde vibrante acorde al logo (antes era cyan) */
     --text-white: #ffffff;
     --text-grey: #a0aec0;
     --text-dark: #2d3748;
@@ -149,8 +149,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
-.info-card-white i { color: #4a5568; font-size: 1.5rem; margin-bottom: 15px; }
-.info-card-white h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.info-card-white i {
+    color: var(--accent); /* ANTES: #4a5568 -> AHORA: Verde del logo */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 /* Termina Sección Nosotros */
 
 /* Empieza Sección Servicios */
@@ -162,7 +165,8 @@ body {
     padding: 40px;
     border-radius: 15px;
     position: relative;
-    border: 1px solid rgba(46, 196, 182, 0.2);
+    /* CAMBIO: Ajustado el color del borde de turquesa a un verde sutil */
+    border: 1px solid rgba(74, 222, 128, 0.2); 
 }
 .card-number { font-size: 4rem; position: absolute; top: 20px; right: 20px; color: rgba(255,255,255,0.03); font-weight: bold; }
 .line-accent { width: 40px; height: 3px; background-color: var(--accent); margin-bottom: 20px; }
